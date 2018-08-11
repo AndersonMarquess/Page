@@ -1,0 +1,82 @@
+body {
+    background-color: #2c2b33;
+    overflow: hidden;
+}
+
+
+#barra_lateral {
+    background-color: #43398c;
+    height: 98vh;
+    width: 350px;
+}
+
+
+#barra_lateral #conteudo_barra_lateral #imagem img {
+    max-width: 250px;
+    border-radius: 100%;
+    border: 3px solid #6f5ef36b;
+    margin-top: 20vh;
+}
+
+
+#barra_lateral #conteudo_barra_lateral #nome h4 {
+    color: white;
+    font-size: 28px;
+    font-family: consolas, arial;
+}
+
+
+#barra_lateral #conteudo_barra_lateral {
+    border: 1px solid black;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-width: 800px) {
+
+    #barra_lateral {
+        height: 180px;
+        width: 100%;
+    }
+    
+
+    #barra_lateral #conteudo_barra_lateral #imagem img {
+        max-width: 130px;
+        border-radius: 100%;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+
+    #barra_lateral #conteudo_barra_lateral #nome h4 {
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+
+
+    #barra_lateral #conteudo_barra_lateral {
+        text-align: initial;
+        display:inline-flex;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    #barra_lateral {
+        height: 140px;
+    }
+    
+
+    #barra_lateral #conteudo_barra_lateral #imagem img {
+        max-width: 100px;
+    }
+
+     #barra_lateral #conteudo_barra_lateral #nome h4 {
+        margin-top: 40px;
+        margin-left: 20px;
+        max-width: 208px;
+    }
+}
