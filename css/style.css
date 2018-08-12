@@ -11,6 +11,7 @@ body {
     height: 98vh;
     min-width: 350px;
     max-width: 350px;
+    position: fixed;
 }
 
 
@@ -36,6 +37,9 @@ body {
     width: 100%;
 }
 
+#conteudo {
+    margin-left: 350px;
+}
 
 #conteudo .projeto {
     color: white;
@@ -61,8 +65,6 @@ body {
 }
 
 
-
-
 #conteudo .projeto .tecnologias span {
     font-size: 32px;
     margin-right: 10px;
@@ -81,17 +83,29 @@ body {
 }
 
 
+#conteudo .projeto #javafx, #conteudo .projeto #sqlite {
+    max-width: 65px;
+}
+
+
 @media (max-width: 900px) {
 
     body {
         display: block;
     }
+    
 
     #barra_lateral {
         height: 180px;
         width: 100%;
         max-width: 100%;
         min-width: 300px;
+        position: unset;
+    }
+
+
+    #conteudo {
+        margin-left: 0px;
     }
     
 
