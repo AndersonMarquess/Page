@@ -1,0 +1,39 @@
+.container {
+    margin: auto;
+    max-width: 920px;
+    min-height: 95vh;
+    border: 1px solid;
+    padding-top: 5vh;
+}
+
+/* Informações gerais do projeto */
+.info-geral-projeto {
+    margin: auto;
+    max-width: 800px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 15px;
+    display: flex;
+}
+
+.img-projeto {
+    margin: auto 30px;
+    width: 200px;
+    height: 130px;
+    border: 1px solid;
+}
+
+.titulo-desc-proj {
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 13px;
+}
+
+.desc-curta {
+    margin: 15px;
+}
