@@ -3,12 +3,15 @@
     max-width: 920px;
     min-height: 95vh;
     border: 1px solid;
-    padding-top: 5vh;
+}
+
+.titulo-desc-proj {
+    max-width: 500px;
 }
 
 /* Informações gerais do projeto */
 .info-geral-projeto {
-    margin: auto;
+    margin: 70px auto;
     max-width: 800px;
     height: 200px;
     border: 1px solid;
@@ -21,10 +24,6 @@
     width: 200px;
     height: 130px;
     border: 1px solid;
-}
-
-.titulo-desc-proj {
-    max-width: 500px;
 }
 
 h2 {
