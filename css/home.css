@@ -1,8 +1,12 @@
+body {
+    overflow-x: hidden;
+}
+
 .container {
     margin: auto;
     max-width: 920px;
     min-height: 95vh;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .titulo-desc-proj {
@@ -36,3 +40,38 @@ h2 {
 .desc-curta {
     margin: 15px;
 }
+
+aside {
+    margin-top: 130px;
+    /* background-color: aliceblue; */
+}
+
+.barra-navegacao {
+    display: inline-flex;
+    padding-left: 570px;
+}
+
+.link-barra {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    height: 33px;
+    margin-top: 100px;
+}
+
+.img-autor-barra {
+    border: 3px solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: 0px 150px;
+}
+/* 
+.borda-teste {
+    border: 1px solid;
+    height: 50px;
+    margin-top: 90px;
+    min-width: 100vw;
+    position: absolute;
+    top: 130px;
+} */
