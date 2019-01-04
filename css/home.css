@@ -30,7 +30,7 @@ body {
 
 .titulo-desc-proj {
     max-width: 500px;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .titulo-proj {
@@ -81,4 +81,15 @@ aside {
     min-width: 99vw;
     position: absolute;
     z-index: -1;
+}
+
+.desc-tecnologias span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-left: 13px;
+    font-style: normal;
+}
+
+.desc-tecnologias {
+    font-style: italic;
 }

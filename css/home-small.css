@@ -22,7 +22,7 @@ aside {
     top: 90px;
 }
 
-@media(max-width: 450px) {
+@media(max-width: 640px) {
 
     body {
         background-image: linear-gradient( to bottom, #222 200px, #fff 200px);
@@ -44,10 +44,6 @@ aside {
 
     .borda-barra-navegacao {
         top: 110px;
-    }
-
-    .info-geral-projeto  {
-        max-width: 790px;
     }
 
     .img-projeto {
