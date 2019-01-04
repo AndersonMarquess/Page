@@ -63,11 +63,11 @@ aside {
     border-radius: 100%;
 }
 
-.borda-teste {
+.borda-barra-navegacao {
     border: 1px solid;
     height: 50px;
     margin-top: 90px;
-    min-width: 100vw;
+    min-width: 99vw;
     position: absolute;
     z-index: -1;
 }
