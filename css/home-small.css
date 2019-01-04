@@ -1,5 +1,9 @@
 /*CSS Para dispositivos de tela media*/
 
+body {
+    background-image: linear-gradient( to bottom, #222 180px, #fff 180px);
+}
+
 aside {
     max-width: 446px;
 }
@@ -19,8 +23,14 @@ aside {
 }
 
 @media(max-width: 450px) {
+
+    body {
+        background-image: linear-gradient( to bottom, #222 200px, #fff 200px);
+    }
+
     aside {
         margin: 100px auto 10px;
+        max-width: 350px;
     }
     
     .link-barra {
