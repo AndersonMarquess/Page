@@ -10,15 +10,11 @@ body {
     min-height: 95vh;
 }
 
-.titulo-desc-proj {
-    max-width: 500px;
-}
-
 /* Informações gerais do projeto */
 .info-geral-projeto {
     margin: 70px auto;
-    max-width: 800px;
-    height: 200px;
+    max-width: 95%;
+    height: 170px;
     border: 1px solid;
     border-radius: 15px;
     display: flex;
@@ -26,20 +22,34 @@ body {
 
 .img-projeto {
     margin: auto 30px;
-    width: 200px;
-    height: 130px;
+    min-width: 228px;
+    min-height: 116px;
     border: 1px solid;
+    border-radius: 5px;
 }
 
-h2 {
+.titulo-desc-proj {
+    max-width: 500px;
+    padding-top: 40px;
+}
+
+.titulo-proj {
     font-size: 28px;
-    font-weight: bold;
     margin-top: 40px;
     margin-left: 13px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 .desc-curta {
     margin: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.link-proj {
+    text-decoration: none;
+    color: blue;
 }
 
 aside {
@@ -57,6 +67,7 @@ aside {
     height: 33px;
     width: 95px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .img-autor-barra {
