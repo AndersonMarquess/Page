@@ -8,7 +8,6 @@ body {
     margin: auto;
     max-width: 920px;
     min-height: 95vh;
-    /* border: 1px solid; */
 }
 
 .titulo-desc-proj {
@@ -61,6 +60,14 @@ aside {
 }
 
 .img-autor-barra {
-    border: 3px solid;
     border-radius: 100%;
+}
+
+.borda-teste {
+    border: 1px solid;
+    height: 50px;
+    margin-top: 90px;
+    min-width: 100vw;
+    position: absolute;
+    z-index: -1;
 }
