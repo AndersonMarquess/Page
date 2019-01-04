@@ -1,0 +1,15 @@
+/*CSS Para dispositivos de tela pequena*/
+
+aside {
+    max-width: 446px;
+}
+
+.img-autor-barra {
+    width: 150px;
+    height: 150px;
+    margin: 0px 50px;
+}
+
+.link-barra {
+    margin-top: 60px;
+ }
