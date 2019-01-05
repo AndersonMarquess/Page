@@ -1,7 +1,7 @@
 /*CSS Para dispositivos de tela pequena*/
 
 body {
-    background-image: linear-gradient( to bottom, #222 240px, #fff 240px);
+    background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1500px, #222 50px);
 }
 
 aside {
@@ -25,7 +25,7 @@ aside {
 @media(max-width: 640px) {
 
     body {
-        background-image: linear-gradient( to bottom, #222 240px, #fff 240px);
+        background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1450px, #222 50px);
     }
 
     aside {
@@ -52,5 +52,9 @@ aside {
 
     .titulo-desc-proj {
         padding-left: 15px;
+    }
+
+    .extra-info-rodape {
+        max-width: 350px;
     }
 }
