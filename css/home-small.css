@@ -49,4 +49,8 @@ aside {
     .img-projeto {
         display: none;
     }
+
+    .titulo-desc-proj {
+        padding-left: 15px;
+    }
 }
