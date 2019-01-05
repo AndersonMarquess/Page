@@ -46,6 +46,10 @@ aside {
         top: 150px;
     }
 
+    .projeto-1 {
+        min-height: 180px;
+    }
+
     .img-projeto {
         display: none;
     }

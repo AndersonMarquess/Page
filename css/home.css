@@ -87,7 +87,7 @@ aside {
     border-bottom: 1px solid;
     height: 50px;
     margin-top: 90px;
-    min-width: 99vw;
+    min-width: 100vw;
     position: absolute;
     z-index: -1;
 }
