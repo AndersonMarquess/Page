@@ -1,7 +1,7 @@
 /*CSS Para dispositivos de tela grande*/
 
 body {
-    background-image: linear-gradient( to bottom, #222 220px, #fff 220px);
+    background-image: linear-gradient( to bottom, #222 280px, #fff 280px);
 }
 
 aside {
@@ -19,5 +19,5 @@ aside {
 }
 
 .borda-barra-navegacao {
-    top: 130px;
+    top: 187px;
 }

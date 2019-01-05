@@ -4,6 +4,15 @@ body {
     overflow-x: hidden;
 }
 
+.banner-nome-autor {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 38px;
+    max-width: 400px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
 .container {
     margin: auto;
     max-width: 920px;
@@ -53,7 +62,7 @@ body {
 }
 
 aside {
-    margin: 130px auto 50px;
+    margin: 50px auto;
 }
 
 .barra-navegacao {
@@ -75,7 +84,8 @@ aside {
 }
 
 .borda-barra-navegacao {
-    border: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     height: 50px;
     margin-top: 90px;
     min-width: 99vw;

@@ -1,7 +1,7 @@
-/*CSS Para dispositivos de tela media*/
+/*CSS Para dispositivos de tela pequena*/
 
 body {
-    background-image: linear-gradient( to bottom, #222 180px, #fff 180px);
+    background-image: linear-gradient( to bottom, #222 240px, #fff 240px);
 }
 
 aside {
@@ -19,31 +19,31 @@ aside {
 }
 
 .borda-barra-navegacao {
-    top: 90px;
+    top: 150px;
 }
 
 @media(max-width: 640px) {
 
     body {
-        background-image: linear-gradient( to bottom, #222 200px, #fff 200px);
+        background-image: linear-gradient( to bottom, #222 240px, #fff 240px);
     }
 
     aside {
-        margin: 100px auto 10px;
+        margin: 50px auto 10px;
         max-width: 350px;
     }
     
     .link-barra {
         font-size: 24px;
-        margin-top: 110px;
+        margin-top: 65px;
     }
     
     .img-autor-barra {
-        margin: 0px 10px 0px 0px;
+        margin: 0px 0px 0px 10px;
     }
 
     .borda-barra-navegacao {
-        top: 110px;
+        top: 150px;
     }
 
     .img-projeto {
