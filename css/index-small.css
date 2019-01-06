@@ -1,50 +1,6 @@
 /*CSS Para dispositivos de tela pequena*/
 
-body {
-    background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1500px, #222 50px);
-}
-
-aside {
-    max-width: 446px;
-}
-
-.img-autor-barra {
-    width: 150px;
-    height: 150px;
-    margin: 0px 50px;
-}
-
-.link-barra {
-    margin-top: 60px;
-}
-
-.borda-barra-navegacao {
-    top: 150px;
-}
-
 @media(max-width: 640px) {
-
-    body {
-        background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1450px, #222 50px);
-    }
-
-    aside {
-        margin: 50px auto 10px;
-        max-width: 350px;
-    }
-    
-    .link-barra {
-        font-size: 24px;
-        margin-top: 65px;
-    }
-    
-    .img-autor-barra {
-        margin: 0px 0px 0px 10px;
-    }
-
-    .borda-barra-navegacao {
-        top: 150px;
-    }
 
     .projeto-1 {
         min-height: 180px;
@@ -56,9 +12,5 @@ aside {
 
     .titulo-desc-proj {
         padding-left: 15px;
-    }
-
-    .extra-info-rodape {
-        max-width: 350px;
     }
 }
