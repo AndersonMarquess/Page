@@ -1,18 +1,3 @@
-/* Css geral da página */
-
-body {
-    overflow-x: hidden;
-}
-
-.banner-nome-autor {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 38px;
-    max-width: 400px;
-    margin: 100px auto 0;
-    text-align: center;
-}
-
 .container {
     margin: auto;
     max-width: 920px;
@@ -64,38 +49,6 @@ body {
     color: blue;
 }
 
-aside {
-    margin: 50px auto;
-}
-
-.barra-navegacao {
-    display: inline-flex;
-}
-
-.link-barra {
-    text-decoration: none;
-    color: black;
-    font-size: 28px;
-    height: 33px;
-    width: 95px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.img-autor-barra {
-    border-radius: 100%;
-}
-
-.borda-barra-navegacao {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    height: 50px;
-    margin-top: 90px;
-    min-width: 100vw;
-    position: absolute;
-    z-index: -1;
-}
-
 .desc-tecnologias span {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -104,4 +57,21 @@ aside {
 
 .desc-tecnologias {
     font-style: italic;
+}
+
+/*CSS Para dispositivos de tela pequena*/
+
+@media(max-width: 640px) {
+
+    .projeto-1 {
+        min-height: 180px;
+    }
+
+    .img-projeto {
+        display: none;
+    }
+
+    .titulo-desc-proj {
+        padding-left: 15px;
+    }
 }

@@ -1,24 +1,54 @@
 /*CSS Para dispositivos de tela pequena*/
 
 body {
+    overflow-x: hidden;
     background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1500px, #222 50px);
 }
 
+.barra-navegacao {
+    display: inline-flex;
+}
+
+.banner-nome-autor {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 38px;
+    max-width: 400px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
 aside {
+    margin: 50px auto;
     max-width: 446px;
 }
 
 .img-autor-barra {
+    border-radius: 100%;
     width: 150px;
     height: 150px;
     margin: 0px 50px;
 }
 
 .link-barra {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    height: 33px;
+    width: 95px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 60px;
 }
 
 .borda-barra-navegacao {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    height: 50px;
+    margin-top: 90px;
+    min-width: 100vw;
+    position: absolute;
+    z-index: -1;
     top: 150px;
 }
 
