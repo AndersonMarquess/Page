@@ -29,6 +29,10 @@ body {
     display: flex;
 }
 
+.link-img-proj {
+    margin: auto 0px;
+}
+
 .img-projeto {
     margin: auto 30px;
     min-width: 228px;
