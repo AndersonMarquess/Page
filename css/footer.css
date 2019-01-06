@@ -8,10 +8,11 @@
 
 .nome-rodape {
     font-family: 'Roboto', sans-serif;
-    max-width: 220px;
+    max-width: 250px;
     box-sizing: border-box;
     margin: auto;
     font-size: 18px;
+    text-align: center;
 }
 
 .extra-info-rodape {
