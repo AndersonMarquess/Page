@@ -1,18 +1,46 @@
+body {
+    background-image: linear-gradient( to bottom, #222 280px, #fff 280px, #fff 1200px, #222 50px);
+}
+
 .container {
     margin: auto;
     max-width: 920px;
-    min-height: 95vh;
+    min-height: 50vh;
+}
+
+.titulo-pagina {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.espaco-texto {
+
+}
+
+.sobre-texto {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 70%;
+    margin: 70px auto;
 }
 
 .informacoes {
-
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    min-height: 160px;
+    max-height: 160px;
+    padding-top: 25px;
+    padding-left: 15px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .dado-info {
     font-family: 'Open Sans', sans-serif;
+    margin: 10px;
 }
 
 .nome-campo {
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
