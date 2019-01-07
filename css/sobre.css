@@ -1,5 +1,11 @@
 body {
-    background-image: linear-gradient( to bottom, #222 280px, #fff 280px, #fff 1200px, #222 50px);
+    background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1100px, #222 50px);
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-image: linear-gradient( to bottom, #222 280px, #fff 280px, #fff 1100px, #222 50px);
+    }
 }
 
 .container {
@@ -15,7 +21,7 @@ body {
 }
 
 .espaco-texto {
-
+    margin-left: 50px;
 }
 
 .sobre-texto {
@@ -43,4 +49,26 @@ body {
 .nome-campo {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
+}
+
+
+
+@media(max-width: 640px) {
+
+    body {
+        background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1200px, #222 50px);
+    }
+
+    .titulo-pagina {
+        margin-top: 50px;
+    }
+
+    .informacoes {
+        min-height: 180px;
+        max-height: 180px;
+    }
+
+    .sobre-texto {
+        margin: 50px auto;
+    }
 }
