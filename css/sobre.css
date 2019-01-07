@@ -3,3 +3,16 @@
     max-width: 920px;
     min-height: 95vh;
 }
+
+.informacoes {
+
+}
+
+.dado-info {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nome-campo {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
