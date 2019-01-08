@@ -2,7 +2,7 @@
 
 body {
     overflow-x: hidden;
-    background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1500px, #222 50px);
+    background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 97%, #222 50px);
 }
 
 .barra-navegacao {
@@ -55,7 +55,7 @@ aside {
 @media(max-width: 640px) {
 
     body {
-        background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1450px, #222 50px);
+        background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 97%, #222 50px);
     }
 
     aside {
