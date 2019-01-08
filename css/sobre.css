@@ -33,8 +33,8 @@
 .informacoes {
     box-shadow: 0 9px 11px rgba(0,0,0,0.025), 0 9px 10px rgba(0,0,0,0.05);
     border-radius: 10px;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 210px;
+    max-height: 210px;
     padding-left: 15px;
     padding-top: 15px;
     max-width: 70%;
@@ -52,6 +52,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.email {
+    text-decoration: none;
+}
+
+.rodape {
+    margin-top: 70px;
+}
+
 /* Telas com no máximo 650px */
 @media(max-width: 650px) {
 
@@ -60,8 +68,8 @@
     }
 
     .informacoes {
-        min-height: 230px;
-        max-height: 230px;
+        min-height: 260px;
+        max-height: 260px;
     }
 }
 
@@ -69,5 +77,6 @@
 @media(max-width: 380px) {
     .informacoes {
         min-height: 290px;
+        max-width: 80%;
     }
 }
