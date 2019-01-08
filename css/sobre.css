@@ -1,12 +1,3 @@
-body {
-    background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1100px, #222 50px);
-}
-
-@media (min-width: 1000px) {
-    body {
-        background-image: linear-gradient( to bottom, #222 280px, #fff 280px, #fff 1100px, #222 50px);
-    }
-}
 
 .container {
     margin: auto;
@@ -15,7 +6,7 @@ body {
 }
 
 .titulo-pagina {
-    font-size: 28px;
+    font-size: 38px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
@@ -26,24 +17,34 @@ body {
 
 .sobre-texto {
     font-family: 'Open Sans', sans-serif;
-    max-width: 70%;
-    margin: 70px auto;
+    max-width: 80%;
+    margin: 70px auto 30px;
+    text-align: justify;
+
+    /* Aumenta o espaçamento entre as linhas */
+    line-height: 1.7;
+}
+
+.antes-informacoes {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .informacoes {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 9px 11px rgba(0,0,0,0.025), 0 9px 10px rgba(0,0,0,0.05);
     border-radius: 10px;
-    min-height: 160px;
-    max-height: 160px;
-    padding-top: 25px;
+    min-height: 200px;
+    max-height: 200px;
     padding-left: 15px;
-    max-width: 80%;
+    padding-top: 15px;
+    max-width: 70%;
     margin: 0 auto;
 }
 
 .dado-info {
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
+    line-height: 1.5;
 }
 
 .nome-campo {
@@ -51,24 +52,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-@media(max-width: 640px) {
-
-    body {
-        background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 1200px, #222 50px);
-    }
+/* Telas com no máximo 650px */
+@media(max-width: 650px) {
 
     .titulo-pagina {
         margin-top: 50px;
     }
 
     .informacoes {
-        min-height: 180px;
-        max-height: 180px;
+        min-height: 230px;
+        max-height: 230px;
     }
+}
 
-    .sobre-texto {
-        margin: 50px auto;
+/* Telas com no máximo 380px */
+@media(max-width: 380px) {
+    .informacoes {
+        min-height: 290px;
     }
 }
