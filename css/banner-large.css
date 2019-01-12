@@ -1,7 +1,8 @@
 /*CSS Para dispositivos de tela grande*/
 
 body {
-    background-image: linear-gradient( to bottom, #222 280px, #fff 280px, #fff 97%, #222 50px);
+    background-image: linear-gradient( to bottom, #222 270px, transparent 270px, transparent 277px, #fff 280px, #fff 97%, #222 50px),
+    linear-gradient(to right, #222, #a500ff, #222 );
 }
 
 aside {
@@ -12,6 +13,8 @@ aside {
     width: 250px;
     height: 250px;
     margin: 0px 150px;
+    background-image: linear-gradient(#8c07d4 90px, transparent 50px);
+    padding: 5px;
 }
 
 .link-barra {

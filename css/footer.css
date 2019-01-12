@@ -4,6 +4,8 @@
     color: white;
     min-height: 100px;
     padding-top: 40px;
+    background-image: linear-gradient(to bottom, transparent 6px, #222 10px ), 
+                      linear-gradient(to right, #222, #a500ff, #222 );
 }
 
 .nome-rodape {

@@ -2,7 +2,8 @@
 
 body {
     overflow-x: hidden;
-    background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 97%, #222 50px);
+    background-image: linear-gradient( to bottom, #222 230px, transparent 230px, transparent 240px, #fff 240px, #fff 97%, #222 50px),
+    linear-gradient(to right, #222, #a500ff, #222 );
 }
 
 .barra-navegacao {
@@ -28,6 +29,8 @@ aside {
     width: 150px;
     height: 150px;
     margin: 0px 50px;
+    background-image: linear-gradient(#8c07d4 50px, transparent 50px);
+    padding: 5px;
 }
 
 .link-barra {
@@ -54,10 +57,6 @@ aside {
 
 @media(max-width: 640px) {
 
-    body {
-        background-image: linear-gradient( to bottom, #222 240px, #fff 240px, #fff 97%, #222 50px);
-    }
-
     aside {
         margin: 50px auto 10px;
         max-width: 350px;
@@ -70,6 +69,8 @@ aside {
     
     .img-autor-barra {
         margin: 0px 0px 0px 10px;
+        /* Ajusta a cor */
+        background-image: linear-gradient(#681099 50px, transparent 50px);
     }
 
     .borda-barra-navegacao {
