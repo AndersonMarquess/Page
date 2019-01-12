@@ -4,6 +4,12 @@
     min-height: 95vh;
 }
 
+.titulo-pagina {
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 /* Informações gerais do projeto */
 .info-geral-projeto {
     margin: 70px auto;
@@ -62,6 +68,10 @@
 /*CSS Para dispositivos de tela pequena*/
 
 @media(max-width: 640px) {
+
+    .titulo-pagina {
+        margin-top: 50px;
+    }
 
     .projeto-1 {
         min-height: 180px;
