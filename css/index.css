@@ -20,6 +20,13 @@
     display: flex;
 }
 
+.img-projeto-container {
+    margin: auto 0;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+    max-width: -webkit-fit-content;
+}
+
 .link-img-proj {
     margin: auto 0px;
 }
@@ -63,22 +70,27 @@
 
 .desc-tecnologias {
     font-style: italic;
+    margin-bottom: 30px;
 }
 
 /*CSS Para dispositivos de tela pequena*/
 
 @media(max-width: 640px) {
 
+    .info-geral-projeto {
+        display: block;
+        min-height: 300px;
+        max-width: 90%;
+        padding-top: 30px;
+    }
+
     .titulo-pagina {
         margin-top: 50px;
     }
 
-    .projeto-1 {
-        min-height: 180px;
-    }
-
-    .img-projeto {
-        display: none;
+    .img-projeto-container {
+        max-width: fit-content;
+        margin: 0 auto;
     }
 
     .titulo-desc-proj {

@@ -14,7 +14,7 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 38px;
-    max-width: 400px;
+    max-width: 350px;
     margin: 100px auto 0;
     text-align: center;
 }
@@ -22,6 +22,9 @@ body {
 aside {
     margin: 50px auto;
     max-width: 446px;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+    max-width: -webkit-fit-content;
 }
 
 .img-autor-barra {
@@ -59,7 +62,9 @@ aside {
 
     aside {
         margin: 50px auto 10px;
-        max-width: 350px;
+        max-width: fit-content;
+        max-width: -moz-fit-content;
+        max-width: -webkit-fit-content;
     }
     
     .link-barra {
