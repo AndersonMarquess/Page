@@ -1,99 +1,10 @@
-.container {
-    margin: auto;
-    max-width: 920px;
-    min-height: 95vh;
+
+body {
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 35%, 0 25%);
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 25%); */
+    background-image: linear-gradient(#2e86de, #2e86de);
 }
 
-.titulo-pagina {
-    font-size: 38px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-/* Informações gerais do projeto */
-.info-geral-projeto {
-    margin: 70px auto;
-    max-width: 95%;
-    height: 170px;
-    border: 1px solid;
-    border-radius: 15px;
+.conteudo {
     display: flex;
-}
-
-.img-projeto-container {
-    margin: auto 0;
-    max-width: fit-content;
-    max-width: -moz-fit-content;
-    max-width: -webkit-fit-content;
-}
-
-.link-img-proj {
-    margin: auto 0px;
-}
-
-.img-projeto {
-    margin: auto 30px;
-    min-width: 228px;
-    min-height: 116px;
-    border: 1px solid;
-    border-radius: 5px;
-}
-
-.titulo-desc-proj {
-    max-width: 550px;
-    padding-top: 30px;
-}
-
-.titulo-proj {
-    font-size: 28px;
-    margin-top: 40px;
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-}
-
-.desc-curta {
-    margin: 15px 0px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.link-proj {
-    text-decoration: none;
-    color: blue;
-}
-
-.desc-tecnologias span {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-}
-
-.desc-tecnologias {
-    font-style: italic;
-    margin-bottom: 30px;
-}
-
-/*CSS Para dispositivos de tela pequena*/
-
-@media(max-width: 640px) {
-
-    .info-geral-projeto {
-        display: block;
-        min-height: 300px;
-        max-width: 90%;
-        padding-top: 30px;
-    }
-
-    .titulo-pagina {
-        margin-top: 50px;
-    }
-
-    .img-projeto-container {
-        max-width: fit-content;
-        margin: 0 auto;
-    }
-
-    .titulo-desc-proj {
-        padding-left: 15px;
-    }
 }
