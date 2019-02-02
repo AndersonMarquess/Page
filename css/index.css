@@ -10,6 +10,46 @@ body {
 h1 { font-size: 5em; }
 h2 { font-size: 2em; }
 
+.aside-top {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nav-top {
+    width: 100%;
+    padding: 2em;
+}
+
+.nav-top ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-top li {
+    margin: 0 1em;
+    padding: .5em 2em;
+    border-bottom-left-radius: 20% 50%;
+    border-top-left-radius: 20% 50%;
+    border-bottom-right-radius: 20% 50%;
+    border-top-right-radius: 20% 50%;
+    background-color: #64a4e4;
+    font-size: 1em;
+}
+
+.nav-top li:hover {
+    cursor: pointer;
+    animation: escurecerBotaoTop .3s linear forwards;
+}
+@keyframes escurecerBotaoTop {
+    0% { background-color: #64a4e4; }
+    100% { background-color: #2568ac; }
+}
+
+.nav-top li a {
+    text-decoration: none;
+    color: white;
+}
+
 .conteudo {
     display: flex;
     flex-direction: column;
