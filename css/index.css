@@ -1,6 +1,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 
 body {
@@ -14,7 +15,7 @@ h2 { font-size: 2em; }
 .aside-top {
     display: flex;
     flex-direction: row-reverse;
-    background-color: #2196F3;
+    background-image: linear-gradient(to right, #213454, #2f9395);
 }
 
 .nav-top {
@@ -34,7 +35,7 @@ h2 { font-size: 2em; }
     border-top-left-radius: 20% 50%;
     border-bottom-right-radius: 20% 50%;
     border-top-right-radius: 20% 50%;
-    background-color: #70b6fb;
+    background-color: #ffffff24; 
     font-size: 1em;
 }
 
@@ -43,8 +44,8 @@ h2 { font-size: 2em; }
     animation: escurecerBotaoTop .3s linear forwards;
 }
 @keyframes escurecerBotaoTop {
-    0% { background-color: #64a4e4; }
-    100% { background-color: #2568ac; }
+    0% { background-color: #ffffff24; }
+    100% { background-color: #164747; }
 }
 
 .nav-top li a {
@@ -61,9 +62,10 @@ h2 { font-size: 2em; }
     width: 100%;
     min-height: 100vh;
 }
-.sec-info:nth-child(odd) { background-color: #2196F3; }
+.sec-info:nth-child(odd) { background-image: linear-gradient(to right, #213454, #2f9395); }
 /*linear-gradient(to right,#366aa0, #217caf)*/
 /*background-image: linear-gradient(to right, #2196F3, #3b7cfc, #5e82fc);*/
+/*background-image: linear-gradient(to right, #213454, #2f9395)*/
 
 .principal  {
     display: flex;
@@ -71,7 +73,7 @@ h2 { font-size: 2em; }
     align-items: center;
     justify-content: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-    background-color: #2196F3;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
 .principal figure {
@@ -96,12 +98,14 @@ h2 { font-size: 2em; }
 }
 
 .footer-geral {
-    background-color: #2196F3;
+    background-image: linear-gradient(to right, #213454, #2f9395);
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
+    -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
 }
 
 .sobre {
@@ -122,7 +126,7 @@ h2 { font-size: 2em; }
     background-color: white;
     border-radius: 10px;
     padding: 2em;
-    box-shadow: 0 0 20px #22222254;
+    box-shadow: 0 0 20px #0000001a;
 }
 
 .sobre h3:nth-child(1) {
@@ -155,7 +159,7 @@ section#projetos {
 .projetos figure {
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 0 20px #0000000d;
+    box-shadow: 0 0 20px #0000001a;
     border-radius: 10px;
     justify-content: space-around;
     align-items: center;
@@ -176,4 +180,50 @@ section#projetos {
 
 .projetos h2 {
     margin: .5em 0;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 90vh;
+}
+
+.skills h1 {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    margin: .5em;
+}
+
+.skills figure.tec-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px #0000001a;
+    width: 200px;
+    height: fit-content;
+    height: -moz-fit-content;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+.skills figcaption.titulo-tec-area {
+    text-align: center;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.tec-container figure {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills .tec-container img {
+    width: 2em;
+    filter: grayscale(1);
+    margin: .5em;
 }
