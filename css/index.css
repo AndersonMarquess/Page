@@ -86,8 +86,9 @@ h2 { font-size: 2em; }
 }
 
 .principal img {
-    border: 10px solid white;
+    border: 10px solid #0f1f2f;
     margin-left: 5em;
+    width: 280px;
 }
 
 .principal figcaption {
@@ -106,6 +107,19 @@ h2 { font-size: 2em; }
     color: white;
     clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
     -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.footer-geral .nome-rodape {
+    font-weight: bold;
+    margin: .5em;
+}
+
+.footer-geral .extra-info-rodape {
+    font-size: .8em;
 }
 
 .sobre {
@@ -181,6 +195,8 @@ section#projetos {
 
 .projetos h2 {
     margin: .5em 0;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 .projetos p {
@@ -262,8 +278,9 @@ section#projetos {
     justify-content: center;
 }
 
-.nav-bottom a {
+.nav-bottom #btn-upper {
     content: '';
+    display: none;
     width: 5em;
     height: 5em;
     background-image: url(https://cdn2.iconfinder.com/data/icons/essential-web-4/50/angle-double-up-arrow-direction-512.png);
