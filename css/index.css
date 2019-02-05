@@ -207,7 +207,7 @@ section#projetos {
     content: '';
     width: 2em;
     height: 2em;
-    background-image: url(http://vorillaz.github.io/devicons/!SVG/github_badge.svg);
+    background-image: url(../img/github.svg);
     background-repeat: no-repeat;
     background-size: 2em;
     position: absolute;
@@ -283,6 +283,6 @@ section#projetos {
     display: none;
     width: 5em;
     height: 5em;
-    background-image: url(https://cdn2.iconfinder.com/data/icons/essential-web-4/50/angle-double-up-arrow-direction-512.png);
+    background-image: url(../img/arrowUp.png);
     background-size: 5em;
 }
