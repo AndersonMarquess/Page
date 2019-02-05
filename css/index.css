@@ -182,6 +182,28 @@ section#projetos {
     margin: .5em 0;
 }
 
+.projetos p {
+    margin-bottom: 1em;
+}
+
+.projetos a::before {
+    content: '';
+    width: 2em;
+    height: 2em;
+    background-image: url(http://vorillaz.github.io/devicons/!SVG/github_badge.svg);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    position: absolute;
+    left: -2em;
+    top: -.5em;
+}
+
+.projetos a {
+    position: relative;
+    margin-left: 1.8em;
+    text-decoration: none;
+}
+
 .skills {
     display: flex;
     flex-direction: row;
