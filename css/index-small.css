@@ -1,0 +1,50 @@
+
+.nav-top { 
+    padding: 2em 0;
+}
+
+.nav-top li a {
+    margin: 0 .3em;
+    padding: .5em 1.5em;
+}
+
+.principal figure { 
+    justify-content: center;
+}
+
+.principal img {
+    margin-left: 0em;
+    width: 30vw;
+}
+
+.principal figcaption {
+    margin-left: 0em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+h1 { 
+    font-size: 2.5em;
+
+}
+h2 { 
+    font-size: 1.2em;
+}
+
+#projetos h1 { 
+    font-size: 3em;
+}
+
+.projetos figure {
+    width: unset;
+    margin: 1em;
+}
+
+.sobre h3 { 
+    font-size: 1.7em;
+}
+
+.footer-geral {
+    min-height: 100px;
+    text-align: center;
+}

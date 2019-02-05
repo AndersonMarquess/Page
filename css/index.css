@@ -118,7 +118,7 @@ h2 { font-size: 2em; }
 
 .sobre h1 {
     color: white;
-    margin-bottom: .5em;
+    margin: .5em;
     text-shadow: 0 0 20px #0000006e;
 }
 
@@ -127,6 +127,7 @@ h2 { font-size: 2em; }
     border-radius: 10px;
     padding: 2em;
     box-shadow: 0 0 20px #0000001a;
+    margin: 1em;
 }
 
 .sobre h3:nth-child(1) {
