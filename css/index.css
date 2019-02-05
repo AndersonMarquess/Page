@@ -250,3 +250,22 @@ section#projetos {
     filter: grayscale(1);
     margin: .5em;
 }
+
+.nav-bottom {
+    position: fixed;
+    bottom: 10vh;
+    right: 2em;
+    z-index: 2;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bottom a {
+    content: '';
+    width: 5em;
+    height: 5em;
+    background-image: url(https://cdn2.iconfinder.com/data/icons/essential-web-4/50/angle-double-up-arrow-direction-512.png);
+    background-size: 5em;
+}
