@@ -153,6 +153,31 @@ h2 { font-size: 2em; }
     margin: .3em 0;
 }
 
+.sobre a {
+    position: relative;
+    margin-left: 2.5em;
+}
+
+.sobre a::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2em;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: -15px;
+    left: -3em;
+}
+
+.sobre a:nth-of-type(1)::before {
+    background-image: url(../img/gmail.svg);
+}
+
+.sobre a:nth-of-type(2)::before {
+    background-image: url(../img/linkedin.svg);
+}
+
 section#projetos {
     display: flex;
     flex-direction: column;
