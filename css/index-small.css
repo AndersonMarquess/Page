@@ -40,6 +40,15 @@ h2 {
     margin: 1em;
 }
 
+.projetos figure::before {
+	width: 240px;
+}
+
+.stack {
+	width: 240px;
+	left: 10px;
+}
+
 .sobre h3 { 
     font-size: 1.7em;
 }

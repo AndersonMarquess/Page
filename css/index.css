@@ -31,10 +31,7 @@ h2 { font-size: 2em; }
 .nav-top li a {
     margin: 0 1em;
     padding: .5em 2em;
-    border-bottom-left-radius: 20% 50%;
-    border-top-left-radius: 20% 50%;
-    border-bottom-right-radius: 20% 50%;
-    border-top-right-radius: 20% 50%;
+    border-radius: 50px;
     background-color: #ffffff24; 
     font-size: 1em;
 }
@@ -81,7 +78,7 @@ h2 { font-size: 2em; }
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 20%;
 }
 
@@ -205,8 +202,40 @@ section#projetos {
     align-items: center;
     padding: 1em;
     flex-direction: column;
-    width: 320px;
-    margin: 0 1em 1em 0;
+	width: 320px;
+	margin: 0 1em 1em 0;
+	position: relative;
+}
+
+.projetos figure::before {
+	content: '';
+	display: none;
+	width: 320px;
+    height: 3em;
+    background-image: linear-gradient(to right, #213454, #2f9395);
+    position: absolute;
+    top: -3em;
+    border-radius: 10px 10px 0 0;
+}
+
+.stack {
+	display: none;
+    position: absolute;
+    color: white;
+	top: -2em;
+	width: 320px;
+	left: 16px;
+    text-align: center;
+}
+
+.projetos figure:hover .stack, .projetos figure:hover::before  {
+	display: block;
+	animation: fade .4s;
+}
+
+@keyframes fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .projetos img {
@@ -251,7 +280,9 @@ section#projetos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    min-height: 90vh;
+	min-height: 90vh;
+	align-self: center;
+    max-width: 900px;
 }
 
 .skills h1 {
