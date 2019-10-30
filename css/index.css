@@ -6,10 +6,12 @@ html {
 
 body {
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
+	background-image: linear-gradient(to right, #213454, #2f9395);
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1 { font-size: 5em; }
+h1 { font-size: 52px; }
 h2 { font-size: 2em; }
 
 .aside-top {
@@ -59,43 +61,48 @@ h2 { font-size: 2em; }
 }
 
 .sec-info {
-    width: 100%;
+	width: 80%;
     min-height: 100vh;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 5px;
+	transition: .5s;
 }
-.sec-info:nth-child(odd) { background-image: linear-gradient(to right, #213454, #2f9395); }
-/*linear-gradient(to right,#366aa0, #217caf)*/
-/*background-image: linear-gradient(to right, #2196F3, #3b7cfc, #5e82fc);*/
-/*background-image: linear-gradient(to right, #213454, #2f9395)*/
 
 .principal  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+	margin-top: 20vh;
+	margin-bottom: 35vh;
+	font-weight: lighter;
+    text-align: center;
 }
 
 .principal figure {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20%;
+	justify-content: space-around;
+	height: 280px;
 }
 
 .principal img {
-    border: 10px solid #0f1f2f;
-    margin-left: 5em;
-    width: 280px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.principal h1 {
+	font-size: 52px;
+	margin-bottom: 10px;
+}
+
+.principal h2 {
+	font-size: 20px;
+    opacity: 0.65;
 }
 
 .principal figcaption {
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
     color: white;
-    margin-left: 5em;
 }
 
 .footer-geral {
@@ -114,7 +121,6 @@ h2 { font-size: 2em; }
 }
 
 .footer-geral .nome-rodape {
-    font-weight: bold;
     margin: .5em;
 }
 
@@ -131,17 +137,24 @@ h2 { font-size: 2em; }
 }
 
 .sobre h1 {
-    color: white;
     margin: .5em;
-    text-shadow: 0 0 20px #0000006e;
+    text-shadow: 0 0 20px #2f939545;
 }
 
-.sobre div {
+.sobre > div {
     background-color: white;
     border-radius: 10px;
     padding: 2em;
-    box-shadow: 0 0 20px #0000001a;
-    margin: 1em;
+    box-shadow: 0 0 20px #2f939545;
+	margin: 1em;
+	transition: 1s;
+}
+
+.sobre .container-contato {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .sobre h3:nth-child(1) {
@@ -178,6 +191,10 @@ h2 { font-size: 2em; }
     background-image: url(../img/linkedin.svg);
 }
 
+.sobre a:nth-of-type(3)::before {
+    background-image: url(../img/github.svg);
+}
+
 section#projetos {
     display: flex;
     flex-direction: column;
@@ -189,7 +206,8 @@ section#projetos {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-around;
+	justify-content: space-around;
+	max-width: 1000px;
 }
 
 #projetos h1 {
@@ -199,7 +217,7 @@ section#projetos {
 .projetos figure {
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 0 20px #0000001a;
+    box-shadow: 0 0 20px #2f939545;
     border-radius: 10px;
     justify-content: space-around;
     align-items: center;
@@ -278,28 +296,30 @@ section#projetos {
     text-decoration: none;
 }
 
-.skills {
+.container-skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 	min-height: 90vh;
 	align-self: center;
-    max-width: 900px;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 .skills h1 {
     width: 100%;
+    text-shadow: 0 0 20px #2f939545;
     text-align: center;
     align-self: center;
-    margin: .5em;
+    margin: .5em 0;
 }
 
 .skills figure.tec-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: 0 0 10px #0000001a;
+    box-shadow: 0 0 10px #2f939545;
     width: 200px;
     height: fit-content;
     height: -moz-fit-content;
