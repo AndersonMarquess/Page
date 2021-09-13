@@ -1,224 +1,208 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Anderson Marques</title>
-	<link rel="icon" href="img/devicon.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-	<link rel="stylesheet" type="text/css" media="(max-width: 700px)" href="css/index-small.css" />
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson Marques</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width: 1100px)" href="css/index-small.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <main>
+        <section class="mainCard">
+            <div class="topMenuContainer">
+                <header>Anderson Marques</header>
+                <nav class="topMenu">
+                    <a onclick="changePage(this)" data-target="allProjects" class="customLink" href="#">Todos os projetos</a>
+                    <a onclick="changePage(this)" data-target="games" class="customLink" href="#">Jogos</a>
+                    <a onclick="changePage(this)" data-target="backend" class="customLink" href="#">Back-end &
+                        Front-end</a>
+                    <a onclick="changePage(this)" data-target="about" class="customLink selectedBtn" href="#">Sobre</a>
+                </nav>
+            </div>
 
-	<aside class="aside-top">
-		<nav class="nav-top">
-			<ul>
-				<li><a href="#projetos">Projetos</a></li>
-				<li><a href="#sobre">Sobre</a></li>
-				<li><a href="#skills">Conhecimentos</a></li>
-			</ul>
-		</nav>
-	</aside>
+            <section id="allProjects" class="mainContent projects hidden"></section>
 
-	<main class="conteudo">
-		<!-- Info principal -->
-		<header class="header-info principal">
-			<figure>
-				<img src="https://avatars0.githubusercontent.com/u/33138941?s=460&v=4" alt="Foto de perfil do Anderson Marques">
-				<figcaption>
-					<h1>Anderson Marques</h1>
-					<h2>Desenvolvedor Java - estudante de análise e desenvolvimento de sistemas</h2>
-				</figcaption>
-			</figure>
-		</header>
+            <section id="games" class="mainContent projects hidden"></section>
 
-		<!-- Projetos -->
-		<section id="projetos" class="sec-info">
-			<h1>Projetos</h1>
-			<div class="projetos">
-				<figure>
-					<img src="img/financeiro.png" alt="imagem do projeto gerenciador financeiro">
-					<figcaption>
-						<h2>Controle financeiro</h2>
-						<p>Sistema de controle e gestão de finanças pessoais.</p>
-						<a target="_blank" href="https://github.com/AndersonMarquess/Debts-management-api">Código fonte</a>
-						<p class="stack">Java, Spring boot e Angular.</p>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/projeto_biblioteca.png" alt="imagem do projeto biblioteca virtual">
-					<figcaption>
-						<h2>Biblioteca virtual</h2>
-						<p>Aplicação de compartilhamento de livros.</p>
-						<a target="_blank" href="https://github.com/AndersonMarquess/Biblioteca-Virtual-P">Código fonte</a>
-						<p class="stack">Java, Spring boot e Angular.</p>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/projeto_tarefas.png" alt="imagem do projeto gerenciador de tarefas">
-					<figcaption>
-						<h2>Gerenciador de tarefas</h2>
-						<p>Trabalho da Faculdade com objetivo de criar um sistema gerenciador de tarefas acadêmicas.</p>
-						<a target="_blank" href="https://github.com/AndersonMarquess/Gerenciador-de-tarefas">Código fonte</a>
-						<p class="stack">C#, ASP.NET MVC e Razor.</p>
-					</figcaption>
-				</figure>
-			</div>
-		</section>
+            <section id="backend" class="mainContent projects hidden"></section>
 
-		<!-- Sobre -->
-		<section id="sobre" class="sec-info sobre">
-			<h1>Sobre</h1>
-			<div>
-				<h3>Nome</h3>
-				<p>Anderson Marques</p>
-				<h3>Formação</h3>
-				<p>Estudante de análise e desenvolvimento de sistemas</p>
-				<h3>Endereço</h3>
-				<p>Diadema - SP</p>
-				<h3>Contato</h3>
-				<div class="container-contato">
-					<a href="mailto:andersongabriel96.ag@gmail.com" title="E-mail">E-mail</a>
-					<a target="_blank" href="https://www.linkedin.com/in/andersonmarquess/" title="Linkedin">Linkedin</a>
-					<a target="_blank" href="https://github.com/AndersonMarquess/" title="Github">Github</a>
-				</div>
-			</div>
-		</section>
+            <section id="about" class="mainContent aboutContainer">
+                <div class="mainCardTitle">
+                    <h3 class="mainTitle">Anderson Marques</h3>
+                    <h4 class="mainSubtitle">Programador Java | C# .NET | Unity</h4>
+                    <div class="contactContainer">
+                        <a class="customLink contactBtn" target="_blank"
+                            href="https://github.com/AndersonMarquess">Github</a>
+                        <a class="customLink contactBtn" target="_blank"
+                            href="https://andersonmarquess.itch.io">Itch.io</a>
+                        <a class="customLink contactBtn" target="_blank"
+                            href="https://www.linkedin.com/in/andersonmarquess">Linkedin</a>
+                    </div>
+                </div>
 
-		<!-- Skills -->
-		<section id="skills" class="sec-info skills">
-			<h1>Conhecimentos</h1>
-			<div class="container-skills">
-				<figure class="tec-container">
-					<figcaption class="titulo-tec-area">Front-end</figcaption>
-					<figure>
-						<img src="img/bootstrap.svg" alt="logo bootstrap">
-						<figcaption>Bootstrap</figcaption>
-					</figure>
-					<figure>
-						<img src="img/css3.svg" alt="logo css3">
-						<figcaption>CSS3</figcaption>
-					</figure>
-					<figure>
-						<img src="img/html5.svg" alt="logo html5">
-						<figcaption>HTML5</figcaption>
-					</figure>
-				</figure>
+                <div class="sectionArt">
+                    <img src="./img/undraw_Developer_activity_re_39tg.svg" alt="main art">
+                </div>
+            </section>
 
-				<figure class="tec-container">
-					<figcaption class="titulo-tec-area">Back-end</figcaption>
+            <section class="credits">
+                <p style="margin-bottom: 5px;text-align: center;">Todos os projetos desenvolvidos foram com objetivo de colocar em prática o uso das suas tecnologias.</p>
+                <p>2021 - Inspirado no design de <a href="https://dribbble.com/shots/15774421-Hello-Home-landing-page-design"
+                        target="_blank">Hello Home: landing page design</a></p>
+            </section>
+        </section>
+    </main>
 
-					<figure>
-						<img src="img/csharp.svg" alt="logo csharp">
-						<figcaption>C#</figcaption>
-					</figure>
-					<figure>
-						<img src="img/java.svg" alt="logo java">
-						<figcaption>Java</figcaption>
-					</figure>
-				</figure>
+    <script>
+        function changePage(element) {
+            changeBtnSelectionClass(element);
+            const header = document.querySelector('.topMenuContainer > header');
 
-				<figure class="tec-container">
-					<figcaption class="titulo-tec-area">Banco de dados</figcaption>
+            document
+                .querySelectorAll('section.mainContent')
+                .forEach(s => {
+                    s.classList.add('hidden');
 
-					<figure>
-						<img src="img/mysql.svg" alt="logo mysql">
-						<figcaption>MySQL</figcaption>
-					</figure>
-					<figure>
-						<img src="img/sqllite.svg" alt="logo sqlite">
-						<figcaption>SQLite</figcaption>
-					</figure>
-				</figure>
+                    let target = element.getAttribute('data-target');
+                    header.style.fontSize = (target == 'about') ? '0px' : '32px';
 
-				<figure class="tec-container">
-					<figcaption class="titulo-tec-area">Framework</figcaption>
+                    if (s.id == target) {
+                        s.classList.remove('hidden');
+                    }
+                });
+        }
 
-					<figure>
-						<img src="img/angular.svg" alt="logo angular">
-						<figcaption>Angular</figcaption>
-					</figure>
-					<figure>
-						<img src="img/net.png" alt="logo .net">
-						<figcaption>ASP.NET MVC</figcaption>
-					</figure>
-					<figure>
-						<img src="img/hibernate.svg" alt="logo hibernate">
-						<figcaption>Hibernate</figcaption>
-					</figure>
-					<figure>
-						<img src="img/java.svg" alt="logo java">
-						<figcaption>JDBC</figcaption>
-					</figure>
-					<figure>
-						<img src="img/java.svg" alt="logo java">
-						<figcaption>JPA</figcaption>
-					</figure>
-					<figure>
-						<img src="img/java.svg" alt="logo java">
-						<figcaption>JSP</figcaption>
-					</figure>
-					<figure>
-						<img src="img/java.svg" alt="logo java">
-						<figcaption>Servlets</figcaption>
-					</figure>
-					<figure>
-						<img src="img/spring.svg" alt="logo spring">
-						<figcaption>Spring boot, Data, Security</figcaption>
-					</figure>
-				</figure>
+        function changeBtnSelectionClass(element) {
+            document
+                .querySelectorAll('.topMenu a.customLink')
+                .forEach(a => {
+                    a.classList.remove('selectedBtn');
+                    if (a == element) {
+                        a.classList.add('selectedBtn');
+                    }
+                });
+        }
 
-				<figure class="tec-container">
-					<figcaption class="titulo-tec-area">Outras ferramentas</figcaption>
-					<figure>
-						<img src="img/chrome.svg" alt="logo chrome devtools">
-						<figcaption>Chrome DevTools</figcaption>
-					</figure>
-					<figure>
-						<img src="img/eclipse.svg" alt="logo eclipse">
-						<figcaption>Eclipse</figcaption>
-					</figure>
-					<figure>
-						<img src="img/git.svg" alt="logo git">
-						<figcaption>Git</figcaption>
-					</figure>
-					<figure>
-						<img src="img/github.svg" alt="logo github">
-						<figcaption>GitHub</figcaption>
-					</figure>
-					<figure>
-						<img src="img/intellij.svg" alt="logo intellij idea">
-						<figcaption>Intellij IDEA</figcaption>
-					</figure>
-					<figure>
-						<img src="img/unity.svg" alt="logo unity">
-						<figcaption>Unity3D</figcaption>
-					</figure>
-					<figure>
-						<img src="img/VisualStudioCode.svg" alt="logo visual studio code">
-						<figcaption>Visual Studio Code</figcaption>
-					</figure>
-				</figure>
-			</div>
-		</section>
-	</main>
+        fillData();
 
-	<nav class="nav-bottom">
-		<a href="#" id="btn-upper" title="Subir página"></a>
-	</nav>
+        function fillData() {
+            let allProjects = '';
+            let games = '';
+            let backend = '';
 
-	<footer class="footer-geral">
-		<p class="nome-rodape">Anderson Marques &copy; 2019</p>
-		<p class="extra-info-rodape">Todos os projetos desenvolvidos foram com objetivo de colocar em prática o uso das
-			suas tecnologias.</p>
-	</footer>
+            let jsonProjects = getProjectsData();
+            jsonProjects.forEach(p => {
+                let html = buildHtmlForProject(p);
+                allProjects += html;
 
-	<script type="text/javascript" src="js/nav-control.js"></script>
+                if (p.labels.some(l => l === "backend")) { backend += html; }
+
+                if (p.labels.some(l => l === "games")) { games += html; }
+            });
+
+            setHtmlData('games', games);
+            setHtmlData('backend', backend);
+            setHtmlData('allProjects', allProjects);
+        }
+
+        function getProjectsData() {
+            return [
+                {
+                    "title": "Controle Financeiro",
+                    "description": "Sistema de controle e gestão de finanças pessoais.",
+                    "art": "./img/financeiro.png",
+                    "url": "https://github.com/AndersonMarquess/Debts-management-api",
+                    "labels": [
+                        "backend",
+                        "frontend"
+                    ],
+                    "stack": [
+                        "Java",
+                        "Spring Boot",
+                        "MongoDB",
+                        "Angular",
+                        "Angular Material",
+                        "Heroku",
+                        "Firebase"
+                    ],
+                    "release": "2019",
+                    "status": "offline"
+                },
+                {
+                    "title": "Gerenciador de tarefas",
+                    "description": "Trabalho da Faculdade com objetivo de criar um sistema gerenciador de tarefas acadêmicas.",
+                    "art": "./img/projeto_tarefas.png",
+                    "url": "https://github.com/AndersonMarquess/Gerenciador-de-tarefas",
+                    "labels": [
+                        "backend",
+                        "frontend",
+                        "games"
+                    ],
+                    "stack": [
+                        "C#",
+                        "ASP.NET MVC",
+                        "MySQL",
+                        "Razor",
+                        "Boostrap"
+                    ],
+                    "release": "2018",
+                    "status": "offline"
+                },
+                {
+                    "title": "Biblioteca virtual",
+                    "description": "Aplicação de compartilhamento de livros.",
+                    "art": "./img/projeto_biblioteca.png",
+                    "url": "https://github.com/AndersonMarquess/Biblioteca-Virtual-P",
+                    "labels": [
+                        "backend",
+                        "frontend"
+                    ],
+                    "stack": [
+                        "Java",
+                        "Spring Boot",
+                        "MongoDB",
+                        "Angular",
+                        "Boostrap",
+                        "Heroku",
+                        "Firebase"
+                    ],
+                    "release": "2019",
+                    "status": "offline"
+                }
+            ];
+        }
+
+        function buildHtmlForProject(project) {
+            return `<div class="project">
+                    <img class="image" src=${project.art} alt="project art">
+                    <strong class="title">${project.title}</strong>
+                    <p class="description">${project.description}</p>
+                    <a href=${project.url} class="selectedBtn customLink" target="_blank">Acessar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-arrow-right">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>`;
+        }
+
+        function setHtmlData(target, value) {
+            if (value === '') {
+                document.querySelector(`a[data-target="${target}"]`).style.display = "none";
+            } else {
+                document.getElementById(`${target}`).innerHTML = value;
+            }
+        }
+    </script>
 </body>
 
 </html>

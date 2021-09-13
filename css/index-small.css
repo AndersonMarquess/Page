@@ -1,75 +1,75 @@
-.nav-top { 
-    padding: 2em 0;
+.mainCard {
+    width: 100%;
+    height: unset;
 }
 
-.nav-top li a {
-    margin: 0 .3em;
-    padding: .5em 1em;
+.topMenuContainer {
+    display: flex;
+    margin-top: unset;
+    margin-right: unset;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
-.principal figure { 
-    justify-content: center;
+@media (max-width: 800px)  {    
+    .topMenuContainer { 
+        justify-content: center;
+    }
+    .topMenuContainer header {
+        display: none;
+    }
+    
+    .topMenu a {
+        font-weight: unset;        
+        text-align: center;
+    }
 }
 
-.principal figcaption {
-    margin-left: 0em;
-    text-align: center;
-    margin-top: 1em;
-}
-
-.principal h2 {
-	padding: 5px;
-}
-
-.sec-info {
-	width: 90%;
-}
-
-h1 { 
-    font-size: 2.5em;
-}
-
-h2 { 
-    font-size: 1.2em;
-}
-
-#projetos h1 { 
-    font-size: 3em;
-}
-
-.projetos figure {
+.topMenu {
+    display: flex;
+    justify-content: space-between;
     width: unset;
-    margin: 1em;
+    padding: 10px;
+    align-items: center;
 }
 
-.projetos figure::before {
-	width: 240px;
+.customLink {
+    border-radius: var(--secondary-border-radius);
+    padding: 1em;
+    font-size: 14px;
 }
 
-.stack {
-	width: 240px;
-	left: 10px;
+/* Main Content */
+.mainContent {
+    overflow: auto;
+    height: 60vh;
 }
 
-.sobre {
-	transition: 1s;
+.aboutContainer {
+    padding: unset;
+    flex-wrap: unset;
+    flex-direction: column-reverse;
+    align-items: center;
+
 }
 
-.sobre h3 { 
-    font-size: 1.7em;
+.mainCardTitle {
+    width: 100%;
+    height: 250px;
 }
 
-@media(max-width: 380px) {
-	.sobre > div {
-		padding: 1em;
-	}
+.mainTitle { font-size: 32px; }
 
-	.sobre .container-contato {
-		height: 100px;
-	}
+.mainSubtitle { font-size: 22px; }
+
+.sectionArt { display: none; }
+
+
+.project a {
+    padding: 1em 2em;
 }
 
-.footer-geral {
-    min-height: 100px;
-    text-align: center;
+.project svg {
+    position: absolute;
+    top: 8px;
 }
