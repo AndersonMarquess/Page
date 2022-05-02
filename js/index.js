@@ -111,6 +111,23 @@ function getProjectsData() {
             ],
             "release": "2019",
             "status": "offline"
+        },
+        {
+            "title": "Ignis Corruption",
+            "description": "Jogo procedural de estratégia com elementos de construção de cidade e sobrevivência, com foco em computadores e disponibilizado na plataforma Steam.",
+            "art": "./img/IgnisCorruption.png",
+            "url": "https://store.steampowered.com/agecheck/app/1825130/",
+            "labels": [
+                "games"
+            ],
+            "stack": [
+                "Unity Engine",
+                "C#",
+                "Steam",
+                "Windows"
+            ],
+            "release": "2022",
+            "status": "online"
         }
     ];
 }
