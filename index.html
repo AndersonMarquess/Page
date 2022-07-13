@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -16,32 +16,17 @@
 <body>
     <main>
         <section class="mainCard">
-            <div class="topMenuContainer">
-                <header>Anderson Marques</header>
-                <nav class="topMenu">
-                    <a onclick="changePage(this)" data-target="allProjects" class="customLink" href="#">Todos os projetos</a>
-                    <a onclick="changePage(this)" data-target="games" class="customLink" href="#">Jogos</a>
-                    <a onclick="changePage(this)" data-target="backend" class="customLink" href="#">Back-end &
-                        Front-end</a>
-                    <a onclick="changePage(this)" data-target="about" class="customLink selectedBtn" href="#">Sobre</a>
-                </nav>
-            </div>
-
-            <section id="allProjects" class="mainContent projects hidden"></section>
-
-            <section id="games" class="mainContent projects hidden"></section>
-
-            <section id="backend" class="mainContent projects hidden"></section>
-
             <section id="about" class="mainContent aboutContainer">
                 <div class="mainCardTitle">
-                    <h3 class="mainTitle">Anderson Marques</h3>
-                    <h4 class="mainSubtitle">Programador Unity | Back-end C# .NET</h4>
+                    <header class="mainTitle"><h1>Anderson Marques</h1></header>
+                    <h4 class="mainSubtitle">Unity Gameplay Programmer | Back-end C# .NET</h4>
                     <div class="contactContainer">
                         <a class="customLink contactBtn" target="_blank"
                             href="https://github.com/AndersonMarquess">Github</a>
                         <a class="customLink contactBtn" target="_blank"
                             href="https://andersonmarquess.itch.io">Itch.io</a>
+                        <a class="customLink contactBtn" target="_blank"
+                            href="https://store.steampowered.com/agecheck/app/1825130/">Steam</a>
                         <a class="customLink contactBtn" target="_blank"
                             href="https://www.linkedin.com/in/andersonmarquess">Linkedin</a>
                     </div>
@@ -50,17 +35,30 @@
                 <div class="sectionArt">
                     <img src="./img/undraw_Developer_activity_re_39tg.svg" alt="main art">
                 </div>
+            </section>           
+            
+            <h2 class="sectionTitle">Jogos</h2>
+            <section id="games" class="mainContent projects"></section>
+            
+            <h2 class="sectionTitle">Ferramentas</h2>
+            <section id="tools" class="mainContent projects"></section>
+            
+            <h2 class="sectionTitle">Back-end & Front-end</h2>
+            <section id="backend" class="mainContent projects"></section>
+
+            <section id="videoPlayerContainer" class="videoPlayerContainer hidden" onclick="hideVideoPlayer(this)">
+                <div id="player"></div>
             </section>
 
             <section class="credits">
                 <p style="margin-bottom: 5px;text-align: center;">Todos os projetos desenvolvidos foram com objetivo de colocar em prática o uso das suas tecnologias.</p>
-                <p>2022 - Inspirado no design de <a href="https://dribbble.com/shots/15774421-Hello-Home-landing-page-design"
-                        target="_blank">Hello Home: landing page design</a></p>
+                <p>Anderson Marques 2022</p>
             </section>
         </section>
     </main>
 
     <script src="./js/index.js"></script>
+    <script src="./js/youtube.js"></script>
 </body>
 
 </html>

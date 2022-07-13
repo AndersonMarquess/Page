@@ -1,17 +1,16 @@
 .mainCard {
     width: 100%;
-    height: unset;
+    height: 95%;
 }
 
 .topMenuContainer {
     display: flex;
-    margin-top: unset;
-    margin-right: unset;
+    margin: unset;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 
-@media (max-width: 800px)  {    
+@media (max-width: 900px)  {    
     .topMenuContainer { 
         justify-content: center;
     }
@@ -22,6 +21,17 @@
     .topMenu a {
         font-weight: unset;        
         text-align: center;
+    }
+
+    .project {
+        height: unset;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .project a{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -39,12 +49,6 @@
     font-size: 14px;
 }
 
-/* Main Content */
-.mainContent {
-    overflow: auto;
-    height: 60vh;
-}
-
 .aboutContainer {
     padding: unset;
     flex-wrap: unset;
@@ -60,10 +64,9 @@
 
 .mainTitle { font-size: 32px; }
 
-.mainSubtitle { font-size: 22px; }
+.mainSubtitle { font-size: 16px; }
 
 .sectionArt { display: none; }
-
 
 .project a {
     padding: 1em 2em;
