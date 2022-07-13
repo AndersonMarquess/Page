@@ -179,7 +179,7 @@ a:hover {
 
 /* Card */
 .project {
-    height: 400px;
+    height: 450px;
     display: flex;
     justify-content: space-between;
     border-radius: var(--primary-border-radius);

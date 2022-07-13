@@ -132,7 +132,8 @@ function getProjectsData() {
                 "title": "Ignis Corruption",
                 "description": "Jogo procedural de estratégia e sobrevivência, com foco em computadores, disponibilizado na plataforma Steam.",
                 "detailedDescription": [
-                    "Integrei com a API do Steamworks as funcionalidade de Leaderboard, Achievement, Stats e Remote Storage.",
+                    "Desenvolvido com C# e Unity.",
+                    "Integrei com a API do Steamworks as funcionalidades de Leaderboard, Achievement, Stats e Remote Storage.",
                     "Adicionado suporte para acessibilidade como remapeamento de botões, configurações de feedback e escala de interface.",
                     "Implementei um controle de câmera com todas as movitações padrões de um RTS.",
                     "Criado sistema de feedback dinâmico com base na visibilidade dos objetos em cena.",
@@ -159,6 +160,7 @@ function getProjectsData() {
                 "title": "Frostbite",
                 "description": "Jogo curtinho de ação e aventura, feito para Mage Jam 1.",
                 "detailedDescription": [
+                    "Desenvolvido com C# e Unity.",
                     "Desenvolvi toda a gameplay pensando em como combinar elementos 2D e 3D no mesmo mundo.",
                     "Adicionado diferentes tipos de feedbacks como por exemplo, movimentação, ataque, dano e morte.",
                     "Implementado sistema de ondas de inimigos, com ajuste na quantidade com base no tempo em jogo.",
@@ -182,7 +184,7 @@ function getProjectsData() {
             {
                 "id": 1657660681571,
                 "title": "Dependency Initializer",
-                "description": "Ferramenta para buscar e preencher a depedência do campo serializado.",
+                "description": "Ferramenta para buscar e preencher a depedência de campos serializados na Unity Engine.",
                 "detailedDescription": [],
                 "clipUrlID": "",
                 "art": "./img/AM_DI.png",
