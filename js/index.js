@@ -198,6 +198,24 @@ function getProjectsData() {
                 ],
                 "release": "2022",
                 "status": "online"
+            },
+            {
+                "id": 1657828375386,
+                "title": "Text i18n",
+                "description": "Ferramenta para gerar e carregar textos em outras línguas na Unity Engine.",
+                "detailedDescription": [],
+                "clipUrlID": "",
+                "art": "./img/AM_I18N.png",
+                "url": "https://github.com/AndersonMarquess/AM_i18n",
+                "labels": [
+                    "tools"
+                ],
+                "stack": [
+                    "Unity Engine",
+                    "C#"
+                ],
+                "release": "2022",
+                "status": "online"
             }
         ]
     };
