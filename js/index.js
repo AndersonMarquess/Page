@@ -78,6 +78,7 @@ function getProjectsData() {
                     "Heroku",
                     "Firebase"
                 ],
+                "icon": [],
                 "release": "2019",
                 "status": "offline"
             },
@@ -100,6 +101,7 @@ function getProjectsData() {
                     "Razor",
                     "Boostrap"
                 ],
+                "icon": [],
                 "release": "2018",
                 "status": "offline"
             },
@@ -124,6 +126,7 @@ function getProjectsData() {
                     "Heroku",
                     "Firebase"
                 ],
+                "icon": [],
                 "release": "2019",
                 "status": "offline"
             },
@@ -152,6 +155,11 @@ function getProjectsData() {
                     "Steam",
                     "Windows"
                 ],
+                "icon": [
+                    "unity.svg",
+                    "windows.svg",
+                    "steam.svg"
+                ],
                 "release": "2022",
                 "status": "online"
             },
@@ -179,6 +187,12 @@ function getProjectsData() {
                     "WebGL",
                     "Windows"
                 ],
+                "icon": [
+                    "unity.svg",
+                    "html5.svg",
+                    "windows.svg",
+                    "itchio.svg"
+                ],
                 "release": "2022",
                 "status": "online"
             },
@@ -205,6 +219,12 @@ function getProjectsData() {
                     "Itch.io",
                     "WebGL"
                 ],
+                "icon": [
+                    "unity.svg",
+                    "html5.svg",
+                    "android.svg",
+                    "itchio.svg"
+                ],
                 "release": "2022",
                 "status": "online"
             },
@@ -223,6 +243,9 @@ function getProjectsData() {
                     "Unity Engine",
                     "C#"
                 ],
+                "icon": [
+                    "unity.svg"
+                ],
                 "release": "2022",
                 "status": "online"
             },
@@ -240,6 +263,9 @@ function getProjectsData() {
                 "stack": [
                     "Unity Engine",
                     "C#"
+                ],
+                "icon": [
+                    "unity.svg"
                 ],
                 "release": "2022",
                 "status": "online"
@@ -266,11 +292,14 @@ function buildHtmlForProject(project) {
             </div>`;
     }
 
+    const techIconsHTML = project.icon.map(s => `<img class="techIcon" src="./img/${s}" alt="${s.split('.')[0]}">`).join("");
+
     return `<div class="project" id=${project.id}>
                 <div class="details">
                     <img class="image" src=${project.art} alt="project art">
                     <strong class="title">${project.title}</strong>
                     <p class="description">${project.description}</p>
+                    <div class="actionsContainer iconContainer">${techIconsHTML}</div>
                     <div class="actionsContainer">
                         ${videoBtnHTML}
                         <a href=${project.url} class="selectedBtn customLink" target="_blank">Acessar

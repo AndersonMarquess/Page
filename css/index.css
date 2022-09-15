@@ -248,12 +248,25 @@ a:hover {
     font-size: .9em;
 }
 
+.techIcon {
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid var(--mainColor);
+    border-radius: var(--secondary-border-radius);
+    padding: 5px;
+    margin-right: 5px;
+}
+
 .actionsContainer {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 15px;
+}
+
+.actionsContainer.iconContainer {
+    justify-content: center;
 }
 
 .project a {
