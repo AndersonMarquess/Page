@@ -40,7 +40,7 @@ function fillData() {
         let html = buildHtmlForProject(p);
         allProjects += html;
 
-        if (p.labels.some(l => l === 'backend')) { backend += html; }
+        //if (p.labels.some(l => l === 'backend')) { backend += html; }
 
         if (p.labels.some(l => l === 'games')) { games += html; }
 
@@ -156,6 +156,33 @@ function getProjectsData() {
                 "status": "online"
             },
             {
+                "id": 1663253505084,
+                "title": "VacinAI",
+                "description": "A Game about collect samples of virus to grow an AI dataset. Game made for Wowie Jam 4.",
+                "detailedDescription": [
+                    "Desenvolvido com C# e Unity.",
+                    "Jogo desenvolvido pensando em criar algo curto e bem polido.",
+                    "Adicionado diferentes tipos de feedbacks durante a gameplay.",
+                    "Implementado diferentes padrões de ataques e movimento para o 'boss' do jogo.",
+                    "Feito em equipe com ilustrações criada por Walisson Dantas."
+                ],
+                "clipUrlID": "kWRqfCnny0k",
+                "art": "./img/VacinAI.png",
+                "url": "https://andersonmarquess.itch.io/vacinai",
+                "labels": [
+                    "games"
+                ],
+                "stack": [
+                    "Unity Engine",
+                    "C#",
+                    "Itch.io",
+                    "WebGL",
+                    "Windows"
+                ],
+                "release": "2022",
+                "status": "online"
+            },
+            {
                 "id": 1657660670284,
                 "title": "Frostbite",
                 "description": "Jogo curtinho de ação e aventura, feito para Mage Jam 1.",
@@ -234,7 +261,7 @@ function buildHtmlForProject(project) {
     if (detailsList.length > 0) {
         detailsHTML =
             `<div class="detailedDescription"> 
-                <header>Pontos chaves do meu trabalho: </header> 
+                <header>Detalhes do meu trabalho: </header> 
                 <ul>${detailsList}</ul>
             </div>`;
     }
@@ -262,7 +289,10 @@ function buildHtmlForProject(project) {
 
 function setHtmlData(target, value) {
     if (value === '') {
-        document.querySelector(`a[data-target="${target}"]`).style.display = 'none';
+        let dataTarget = document.querySelector(`a[data-target="${target}"]`);
+        if (dataTarget != null) {
+            dataTarget.style.display = 'none';
+        }
     } else {
         const element = document.getElementById(`${target}`);
         if (element === null) { return; }
