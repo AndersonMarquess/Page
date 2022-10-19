@@ -138,7 +138,7 @@ function getProjectsData() {
                     "Desenvolvido com C# e Unity.",
                     "Integrei com a API do Steamworks as funcionalidades de Leaderboard, Achievement, Stats e Remote Storage.",
                     "Adicionado suporte para acessibilidade como remapeamento de botões, configurações de feedback e escala de interface.",
-                    "Implementei um controle de câmera com todas as movitações padrões de um RTS.",
+                    "Implementei um controle de câmera com todas as movimentações padrões de um RTS.",
                     "Criado sistema de feedback dinâmico com base na visibilidade dos objetos em cena.",
                     "Implementado sistema para criação e posicionamento dos objetos de forma procedural, com base nas configurações escolhidas pelo jogador em runtime.",
                     "Implementado diferentes I.A. usando behaviour tree e scriptable objects para os detalhes dos comportamentos.",
@@ -172,7 +172,7 @@ function getProjectsData() {
                     "Jogo desenvolvido pensando em criar algo curto e bem polido.",
                     "Adicionado diferentes tipos de feedbacks durante a gameplay.",
                     "Implementado diferentes padrões de ataques e movimento para o 'boss' do jogo.",
-                    "Feito em equipe com ilustrações criada por Walisson Dantas."
+                    "Feito em equipe com ilustrações criadas por Walisson Dantas."
                 ],
                 "clipUrlID": "kWRqfCnny0k",
                 "art": "./img/VacinAI.png",
@@ -231,7 +231,7 @@ function getProjectsData() {
             {
                 "id": 1657660681571,
                 "title": "Dependency Initializer",
-                "description": "Ferramenta para buscar e preencher a depedência de campos serializados na Unity Engine.",
+                "description": "Ferramenta para buscar e preencher a dependência dos campos serializados na Unity Engine.",
                 "detailedDescription": [],
                 "clipUrlID": "",
                 "art": "./img/AM_DI.png",
@@ -252,7 +252,7 @@ function getProjectsData() {
             {
                 "id": 1657828375386,
                 "title": "Text i18n",
-                "description": "Ferramenta para gerar e carregar textos em outras línguas na Unity Engine.",
+                "description": "Ferramenta de localização para gerar e carregar textos em outras línguas na Unity Engine.",
                 "detailedDescription": [],
                 "clipUrlID": "",
                 "art": "./img/AM_I18N.png",
